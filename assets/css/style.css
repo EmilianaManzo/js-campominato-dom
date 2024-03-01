@@ -24,11 +24,15 @@ header img{
 
 footer{
   height: 80px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .em-container{
   margin: 0 auto;
-  width: 600px;
+  width: 500px;
   aspect-ratio: 1;
   background-color: cornflowerblue;
   flex-wrap: wrap;
@@ -59,4 +63,12 @@ footer{
 .sd_hard{
   width: calc(100% /7);
   aspect-ratio: 1;
+}
+
+.bombone{
+  background-color: black;
+}
+
+.output{
+  color:red;
 }
