@@ -2,7 +2,11 @@ const emContainer = document.querySelector('.em-container');
 const btn = document.getElementById('bottoncino');
 const difficulty = document.querySelector('.difficolta');
 
+const totBombe = 16;
+// const bombone = [];
+// const numBombe = [];
 
+let contatore;
 
 
 reset();
@@ -68,6 +72,11 @@ function start (){
   }else if (chooseDif == 'hard'){
     numeriContati = 49;
   }
+
+  numRandom(numeriContati);
+  console.log(numRandom(numeriContati));
+  // console.log(bombone);
+  
   
   for (let i = 1; i <= numeriContati; i++){
     const square = creation(i) ;
@@ -78,7 +87,48 @@ function start (){
       square.classList.add('sd_hard');
     }
 
+
     emContainer.append(square);
   }
 
 }
+
+// funzione estrazione numeri random per array 
+
+function numRandom(parametro){
+  const numBombe = [];
+  let numeroBomba;
+
+  for (let i = 1; i <= totBombe; i++){
+    numeroBomba = Math.floor(Math.random() * parametro ) + 1; 
+    
+    if (!numBombe.includes(numeroBomba)){
+      numBombe.push(numeroBomba);
+      // bombone.push(numeroBomba);
+    }
+
+    
+  }
+  
+  return numBombe;
+}
+
+// funzione estrazione numeri random per array 
+
+// function numRandom(parametro){
+
+//   let numeroBomba;
+
+//   for (let i = 1; i <= totBombe; i++){
+//     numeroBomba = Math.floor(Math.random() * parametro ) + 1; 
+    
+//     if (!numBombe.includes(numeroBomba)){
+//       numBombe.push(numeroBomba);
+//     }
+
+    
+//   }
+  
+//   return numBombe;
+// }
+

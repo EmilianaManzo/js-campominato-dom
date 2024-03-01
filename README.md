@@ -16,5 +16,5 @@ Aggiungere una `select` accanto al bottone di generazione, che fornisca una scel
 - congelare la griglia
 
 # Svolgimento:
-1. un array vuoto che andrò a riempire con numeri random 
-2. 
+1. dichiaro delle variabili globali per il numero totale delle bombe, un array vuoto che andrò a riempire con una funzione e un contatore.
+2. creo una funzione per estrarre numeri random che andranno a popolare il mio array.
