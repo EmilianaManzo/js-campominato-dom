@@ -106,7 +106,7 @@ function numRandom(parametro){
       numBombe.push(numeroBomba);
       // bombone.push(numeroBomba);
     }
-
+    
     
   }
   
